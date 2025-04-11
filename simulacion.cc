@@ -1,3 +1,5 @@
+// Calcula la activación de cobre en reactor nuclear de CCHEN
+
 Double_t F_ter=6.75e+13;
 Double_t F_epi=1.14e+12;
 Double_t Sig_ter=4.47e-28;
