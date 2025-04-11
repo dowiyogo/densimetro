@@ -1,0 +1,17 @@
+http://forum.arduino.cc/index.php?topic=45329.0
+http://www.forosdeelectronica.com/f24/leer-estado-puerto-avr-c-pequeno-detalle-atmega-52417/
+http://www.nongnu.org/avr-libc/user-manual/group__avr__cpufunc.html#ga46388d9db8422abfea56ae2323f7a77c
+http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf
+https://vidaembebida.wordpress.com/2014/07/29/avr-programacion-en-c-06-interrupciones-en-los-avr/
+http://avrbeginners.net/architecture/spi/spi.html#spsr
+http://www.ladyada.net/learn/avr/avrdude.html
+http://www.micahcarrick.com/tutorials/avr-microcontroller-tutorial/getting-started.html
+http://ben0bi.blogspot.cl/2012/10/how-to-program-brandnew-atmega328p-with.html
+https://gcc.gnu.org/install/prerequisites.html
+http://distribute.atmel.no/tools/opensource/Atmel-AVR-Toolchain-3.4.2/avr/SOURCES.README
+http://mirrors-usa.go-parts.com/gcc/releases/gcc-4.8.5/
+http://download.savannah.gnu.org/releases/avr-libc/old-releases/
+http://www.tldp.org/HOWTO/Avr-Microcontrollers-in-Linux-Howto/x207.html
+http://www.ladyada.net/learn/avr/setup-unix.html
+https://arduino-info.wikispaces.com/MegaQuickRef
+http://kevintechnology.com/post/25156701195/programming-arduino-mega-using-avrdude

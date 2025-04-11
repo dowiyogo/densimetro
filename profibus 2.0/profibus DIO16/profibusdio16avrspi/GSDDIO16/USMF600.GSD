@@ -1,0 +1,75 @@
+; GSD_Ed: This is a empty sample. You may customize it for use.
+; These 3 lines are necessary only for template management and can be
+; removed after using. The GSD file starts with the line below.
+;=========================================================
+; GSD-File  for $Your Device Identifier$  $Your Company$ 
+; Generated with GSD-Ed V2.01
+; 
+;
+; Stand   : $Today$
+; File    : $File Name$
+;=========================================================
+#Profibus_DP
+; Unit-Definition-List:
+GSD_Revision=1
+Vendor_Name="USM"
+Model_Name="v1.8"
+Revision            = "Rev. 1"
+Ident_Number        = 0xF600
+Protocol_Ident      = 0
+Station_Type        = 0
+FMS_supp            = 0
+Hardware_Release="V1.1"
+Software_Release="V1.1"
+9.6_supp=0
+19.2_supp=0
+93.75_supp=0
+187.5_supp=0
+500_supp=0
+1.5M_supp           = 1
+3M_supp=0
+6M_supp=0
+12M_supp=0
+MaxTsdr_9.6         = 15
+MaxTsdr_19.2        = 15
+MaxTsdr_93.75       = 15
+MaxTsdr_187.5       = 15
+MaxTsdr_500         = 15
+MaxTsdr_1.5M        = 15
+MaxTsdr_3M          = 35
+MaxTsdr_6M          = 60
+MaxTsdr_12M=95
+Redundancy          = 0
+Repeater_Ctrl_Sig   = 2
+;
+; Slave-Specification:
+24V_Pins            = 0
+Implementation_Type="VPC3+ on Proficonn"
+;
+Bitmap_Device="DPV0_1N"
+Freeze_Mode_supp=1
+Sync_Mode_supp      = 1
+Auto_Baud_supp      = 1
+Set_Slave_Add_supp  = 0
+Min_Slave_Intervall = 6
+Modular_Station     = 0
+Fail_Safe           = 0
+;
+Slave_Family=3@Proficonn@DensimetroUSM@Input
+Max_Diag_Data_Len=6
+
+Max_User_Prm_Data_Len = 3
+Ext_User_Prm_Data_Const(0)= 0x00,0x00,0x00
+
+; Module-Definitions:
+;
+Module="2 Byte In 2 Byte Out" 0x31;
+1
+EndModule
+
+
+
+
+
+
+

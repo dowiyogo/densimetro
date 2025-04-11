@@ -1,0 +1,31 @@
+profibus: main.c DpAppl.c DpAppl.h DpAppl.o DpCfg.c DpCfg.h DpCfg.o DpDiag.c DpDiag.o DpPrm.c DpPrm.o ./DPV0_DRV/dp_if.c ./DPV0_DRV/dp_if.h dp_if.o ./DPV0_DRV/dp_inc.h ./DPV0_DRV/dp_isr.c dp_isr.o ./DPV0_DRV/dpl_list.h platform.h
+
+	avr-gcc -mmcu=atmega1280 -std=gnu99 -Os./spi/spi.c  main.c -o main.o 
+	avr-gcc -mmcu=atmega1280 -Os main.o DpAppl.o DpCfg.o DpDiag.o DpPrm.o dp_if.o dp_isr.o -o profibus.o
+	avr-objcopy -j .text -j .data -O ihex profibus.o profibus.hex
+
+DpAppl.o: DpAppl.c DpAppl.h
+	avr-gcc -mmcu=atmega1280 -Os -c DpAppl.c -o DpAppl.o
+
+DpCfg.o: DpCfg.c DpCfg.h
+	avr-gcc -mmcu=atmega1280 -Os -c DpCfg.c -o DpCfg.o
+
+DpDiag.o: DpDiag.c
+	avr-gcc -mmcu=atmega1280 -Os -c DpDiag.c -o DpDiag.o
+
+DpPrm.o: DpPrm.c
+	avr-gcc -mmcu=atmega1280 -Os -c DpPrm.c -o DpPrm.o
+
+dp_if.o: ./DPV0_DRV/dp_if.c ./DPV0_DRV/dp_if.h
+	avr-gcc -mmcu=atmega1280 -Os -c ./DPV0_DRV/dp_if.c -o dp_if.o
+
+dp_isr.o: ./DPV0_DRV/dp_isr.c
+	avr-gcc -mmcu=atmega1280 -Os -c  ./DPV0_DRV/dp_isr.c -o dp_isr.o
+
+#spi.o: ./spi/spi.c ./spi/spi.h
+#	avr-gcc -mmcu=atmega1280 -Os -c ./spi/spi.c -o spi.o
+	
+	
+
+clean:
+	rm profibus.o DpAppl.o DpCfg.o DpDiag.o DpPrm.o dp_if.o dp_isr.o spi.o profibus
