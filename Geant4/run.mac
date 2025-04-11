@@ -1,0 +1,9 @@
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 0.2 mm
+#/gps/pos/halfz 0.5 mm
+
+#/gps/particle ion
+#/gps/ion 11 22 0 0
+#/gps/energy 0 keV
+/run/beamOn 1000000
