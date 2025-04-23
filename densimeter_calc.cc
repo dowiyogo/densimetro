@@ -3,7 +3,7 @@
 #include <TH1F.h>
 #include <math.h>
 
-int densimeter2(char *lead_file_list,char *plastic_file_list, \
+int densimeter_calc(char *lead_file_list,char *plastic_file_list, \
 	char* alum_file_list,char *air_file_list){
 //Estas son listas de archivos que generaba porque no podia hacer adquisiciones largas de datos
 
